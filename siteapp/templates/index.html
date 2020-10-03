@@ -1,0 +1,631 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+
+   <!-- Intro Section
+   ================================================== -->
+   <section id="intro">
+
+      <!-- Flexslider Start-->
+	   <div id="intro-slider" class="flexslider">
+
+		   <ul class="slides">
+
+			   <!-- Slide -->
+			   <li>
+				   <div class="row">
+					   <div class="col full">
+						   <div class="slider-text">
+							   <h2>Hello, my name is <span>Ioannis Polymenis</span>. I enjoy programming and machine Learning designing websites and photography.</h2>
+							   <p>Aenean condimentum, lacus sit amet luctus lobortis, dolores et quas molestias excepturi
+                        enim tellus ultrices elit, amet consequat enim elit noneas sit amet luctu.</p>
+						   </div>
+					   </div>
+				   </div>
+			   </li>
+
+            <!-- Slide -->
+			   <li>
+				   <div class="row">
+					   <div class="col full">
+						   <div class="slider-text">
+							   <h2>Take a look at some of <a href="#portfolio" title="">my works</a> or <a href="#contact" title="">get in
+                        touch</a> to discuss how we can help you.</h2>
+							   <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti eos et accusamus.</p>
+						   </div>
+					   </div>
+				   </div>
+			   </li>
+
+		   </ul>
+	   </div>
+	   <!-- Flexslider End-->
+
+   </section> <!-- Intro Section End-->
+
+
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row section-head">
+         <div class="col full">
+
+            <h2>Portfolio</h2>
+            <p class="desc">Check out my latest projects.</p>
+
+            <p class="intro">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+            deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
+            </p>
+
+         </div>
+      </div>
+
+      <div class="row">
+
+		   <!-- Portfolio Wrapper -->
+		   <div id="portfolio-wrapper">
+
+			   <div class="col portfolio-item">
+               <div class="item-wrap">
+					   <a href="#" data-reveal-id="modal-01"><img src="{% static 'website/images/portfolio/portfolio.jpg' %}" alt=""/></a>
+					   <div class="portfolio-item-meta">
+						   <h5><a href="{% url 'project' %}">Personal Portfolio website</a></h5>
+					   </div>
+               </div>
+			   </div>
+
+            <div class="col portfolio-item">
+               <div class="item-wrap">
+					   <a href="#" data-reveal-id="modal-02"><img src="{% static 'website/images/portfolio/catdog.jpg' %}" alt=""/></a>
+					   <div class="portfolio-item-meta">
+						   <h5><a href="#">Cat-and-Dog Image Classifier</a></h5>
+					   </div>
+               </div>
+			   </div>
+
+            <div class="col portfolio-item">
+               <div class="item-wrap">
+					   <a href="#" data-reveal-id="modal-03"><img src="{% static 'website/images/portfolio/eve.jpg' %}" alt=""/></a>
+					   <div class="portfolio-item-meta">
+						   <h5><a href="#">Eve</a></h5>
+					   </div>
+               </div>
+			   </div>
+
+            <div class="col portfolio-item">
+               <div class="item-wrap">
+					   <a href="#" data-reveal-id="modal-04"><img src="{% static 'website/images/portfolio/sneaker-splash.jpg' %}" alt=""/></a>
+					   <div class="portfolio-item-meta">
+						   <h5><a href="#">Sneaker Splash</a></h5>
+					   </div>
+               </div>
+			   </div>
+
+		   </div> <!-- Portfolio Wrapper End -->
+
+
+		</div> <!-- End Row -->
+
+
+      <!-- Modal Popup
+	   =========================================================== -->
+
+      <!-- modal-01 -->
+	   <div id="modal-01" class="reveal-modal">
+
+		   <img class="scale-with-grid" src="{% static 'website/images/portfolio/portfolio.jpg' %}" alt="" />
+
+		   <div class="description-box">
+			   <h4>The Cosmic Sneakers</h4>
+			   <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <span class="categories"><i class="icon-tag"></i>Branding, Web Design</span>
+		   </div>
+
+         <div class="link-box">
+            <a href="{% url 'project' %}" target="_blank">Details</a> <!--Link to my portfolio page.-->
+		      <a class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div><!-- modal-01 End -->
+
+      <!-- modal-02 -->
+	   <div id="modal-02" class="reveal-modal">
+
+		   <img class="scale-with-grid" src="{% static 'website/images/portfolio/catdog.jpg' %}" alt="" />
+
+		   <div class="description-box">
+			   <h4>Milk Splash</h4>
+			   <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <span class="categories"><i class="icon-tag"></i>Branding, Web Design</span>
+         </div>
+
+         <div class="link-box">
+            <a href="http://www.behance.net" target="_blank">Details</a>  <!--Link to my portfolio page.-->
+		      <a class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div> <!-- modal-02 End -->
+
+      <!-- modal-03 -->
+	   <div id="modal-03" class="reveal-modal">
+
+		   <img class="scale-with-grid" src="{% static 'website/images/portfolio/modals/m-eve.jpg' %}" alt="" />
+
+		   <div class="description-box">
+			   <h4>Eve</h4>
+			   <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <span class="categories"><i class="icon-tag"></i>Photography, Branding</span>
+         </div>
+
+         <div class="link-box">
+            <a href="http://www.behance.net" target="_blank">Details</a>
+		      <a class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div> <!-- modal-03 End -->
+
+      <!-- modal-04 -->
+	   <div id="modal-04" class="reveal-modal">
+
+		   <img class="scale-with-grid" src="{% static 'website/images/portfolio/modals/m-sneaker-splash.jpg' %}" alt="" />
+
+		   <div class="description-box">
+			   <h4>Sneaker Splash</h4>
+			   <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <span class="categories"><i class="icon-tag"></i>Photography, Branding</span>
+         </div>
+
+         <div class="link-box">
+            <a href="http://www.behance.net" target="_blank">Details</a>  <!--Link to my portfolio page.-->
+		      <a class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div> <!-- modal-04 End -->
+
+      <!-- modal-05 -->
+	   <div id="modal-05" class="reveal-modal">
+
+		   <img class="scale-with-grid" src="{% static 'website/images/portfolio/modals/m-judah.jpg' %}" alt="" />
+
+		   <div class="description-box">
+			   <h4>Judah</h4>
+			   <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <span class="categories"><i class="icon-tag"></i>Photography, Web Design</span>
+         </div>
+
+         <div class="link-box">
+            <a href="http://www.behance.net" target="_blank">Details</a>  <!--Link to my portfolio page.-->
+		      <a class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div> <!-- modal-05 End -->
+
+      <!-- modal-06 -->
+	   <div id="modal-06" class="reveal-modal">
+
+		   <img class="scale-with-grid" src="{% static 'website/images/portfolio/modals/m-vector-flower.jpg' %}" alt="" />
+
+		   <div class="description-box">
+			   <h4>Vector Flower</h4>
+			   <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <span class="categories"><i class="icon-tag"></i>Branding, Web Design</span>
+         </div>
+
+         <div class="link-box">
+            <a href="http://www.behance.net" target="_blank">Details</a>  <!--Link to my portfolio page.-->
+		      <a class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div> <!-- modal-06 End -->
+
+      <!-- modal-07 -->
+	   <div id="modal-07" class="reveal-modal">
+
+		   <img class="scale-with-grid" src="{% static 'website/images/portfolio/modals/m-clock.jpg' %}" alt="" />
+
+		   <div class="description-box">
+			   <h4>Clock</h4>
+			   <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <span class="categories"><i class="icon-tag"></i>Branding, Web Design</span>
+         </div>
+
+         <div class="link-box">
+            <a href="http://www.behance.net" target="_blank">Details</a>  <!--Link to my portfolio page.-->
+		      <a class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div> <!-- modal-07 End -->
+
+      <!-- modal-08 -->
+	   <div id="modal-08" class="reveal-modal">
+
+		   <img class="scale-with-grid" src="{% static 'website/images/portfolio/modals/m-fields.jpg' %}" alt="" />
+
+		   <div class="description-box">
+			   <h4>Fields</h4>
+			   <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <span class="categories"><i class="icon-tag"></i>Photography</span>
+         </div>
+
+         <div class="link-box">
+            <a href="http://www.behance.net" target="_blank">Details</a>  <!--Link to my portfolio page.-->
+		      <a class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div> <!-- modal-08 End -->
+
+   </section> <!-- Portfolio End -->
+
+   <!-- Journal Section
+   ================================================== -->
+   <section id="journal">
+
+      <div class="row section-head">
+         <div class="col full">
+            <h2>Journal</h2>
+            <p class="desc">My latest posts and rants.</p>
+         </div>
+      </div>
+
+      <!-- Blog Entries -->
+      <div class="blog-entries">
+
+         <!-- Entry -->
+         <article class="entry">
+
+            <div class="row entry-header">
+
+               <div class="author-image">
+                  <img src="{% static 'website/images/user-03.png' %}" alt="Sakura Haruno" />
+               </div>
+
+               <div class="col g-9 offset-1 entry-title">
+                  <h3><a href="{% url 'blog-single' %}">Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin auctor.</a></h3>
+               </div>
+
+               <div class="col g-2">
+                  <p class="post-meta">
+                     <time pubdate="" class="post-date" datetime="2013-08-19">Aug 19, 2013</time>
+                     <span class="dauthor">By Ioannis Polymenis</span>
+                  </p>
+               </div>
+
+            </div>
+
+            <div class="row">
+
+               <div class="col g-9 offset-1 post-content">
+                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                  deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
+                  <a href="{% url 'blog-single' %}" class="more-link">Read More<i class="icon-angle-right"></i></a></p>
+               </div>
+
+            </div>
+
+         </article> <!-- Entry End -->
+
+         <!-- Entry -->
+         <article class="entry">
+
+            <div class="row entry-header">
+
+               <div class="author-image">
+                  <img src="{% static 'website/images/user-03.png' %}" alt="John Doe" />
+               </div>
+
+               <div class="col g-9 offset-1 entry-title">
+                  <h3><a href="#">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed.</a></h3>
+               </div>
+
+               <div class="col g-2">
+                  <p class="post-meta">
+                     <time pubdate="" class="post-date" datetime="2013-08-09">Aug 9, 2013</time>
+                     <span class="dauthor">By John Doe</span>
+                  </p>
+               </div>
+
+            </div>
+
+            <div class="row">
+
+               <div class="col g-9 offset-1 post-content">
+                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                  deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
+                  <a href="#" class="more-link">Read More<i class="icon-angle-right"></i></a></p>
+               </div>
+
+            </div>
+
+         </article> <!-- Entry End -->
+
+         <!-- Entry -->
+         <article class="entry">
+
+            <div class="row entry-header">
+
+               <div class="author-image">
+                  <img src="{% static 'website/images/user-03.png' %}" alt="Naruto Uzumaki" />
+               </div>
+
+               <div class="col g-9 offset-1 entry-title">
+                  <h3><a href="">Quis autem vel esse eum iure reprehenderit qui in ea voluptate velit esse.</a></h3>
+               </div>
+
+               <div class="col g-2">
+                  <p class="post-meta">
+                     <time pubdate="" class="post-date" datetime="2013-08-07">Aug 7, 2013</time>
+                     <span class="dauthor">By Naruto Uzumaki</span>
+                  </p>
+               </div>
+
+            </div>
+
+            <div class="row">
+
+               <div class="col g-9 offset-1 post-content">
+                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                  deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
+                  <a href="" class="more-link">Read More<i class="icon-angle-right"></i></a></p>
+               </div>
+
+            </div>
+
+         </article> <!-- Entry End -->
+
+      </div> <!-- Blog Entries End -->
+
+   </section>  <!-- Journal Section End -->
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row section-head">
+
+         <div class="col one-fourth">
+            <h2>About </h2>
+            <p class="desc">This is how I am.</p>
+         </div>
+         <div class="row team-wrap">
+         <div class="col one-fourth">
+
+            <img src="{% static 'website/images/img.jpg' %}" alt=""/>
+
+            <div class"member-name">
+               <h5>Ioannis Polymenis</h5>
+               <span>Phd Researcher</span>
+            </div>
+
+            <ul class="member-social">
+               <li><a href="#"><i class="icon-facebook"></i></a></li>
+               <li><a href="#"><i class="icon-twitter"></i></a></li>
+               <li><a href="#"><i class="icon-google-plus-sign"></i></a></li>
+               <li><a href="#"><i class="icon-linkedin"></i></a></li>
+               <li><a href="#"><i class="icon-skype"></i></a></li>
+            </ul>
+
+            </div>
+        </div>
+         <div class="row">
+             <p class="intro">I am a PhD researcher at Newcastle University, and my research is focused 
+                 on developing an Autonomous Underwater Vehicle (AUV) using Computer Vision and 
+                 Machine Learning which would be capable of underwater intervention. I am passionate about 
+                 continually learning new and exciting things, and particularly things related to engineering 
+                 and technology. </p>
+         </div>
+        
+
+         <div class="services-wrapper">
+            <h2><strong>Education</strong></h2>
+            <div class="row">
+               
+                <div class="col">
+                    
+                    <div class="card border-dark mb-3" style="max-width: 18rem;">
+                        <div class="card-header"></div>
+                        <span class="date"><span class="icon-calendar"></span> October 2019 - Present</span>
+                        <div class="card-body text-dark">
+                        <h5 class="card-title">PhD in Autonomous Underwater Vehicles</h5>
+                        <p class="card-text" style="text-align: justify;">I am a PhD candidate at Newcastle University funded by EPSRC. My research interests are in the areas of Autonomous Underwater Vehicles, 
+                            Machine Learning, Depp Learning, and Computer Vision.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col m-first">
+                    <div class="card border-dark mb-3" style="max-width: 18rem;">
+                        <div class="card-header"></div>
+                        <span class="date"><span class="icon-calendar"></span> September 2018 - August 2019</span>
+                        <div class="card-body text-dark">
+                        <h5 class="card-title">MSc in Naval Architecture</h5>
+                        <p class="card-text" style="text-align: justify;">The course enabled me to develop my practical 
+                            skills to become a technically proficient, forward-thinking Naval Architect. Furthermore, 
+                            I gained the theoretical knowledge that underpins modern Naval Architectural practice. I also got 
+                            hands-on expertise of specialist (CFD)software and analysis techniques to predict the performance 
+                            of marine vehicles through the completion of my thesis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col ">
+                    <div class="card border-dark mb-3" style="max-width: 18rem;">
+                        <div class="card-header"></div>
+                        <span class="date"><span class="icon-calendar"></span> September 2016 - June 2018</span>
+                        <div class="card-body text-dark">
+                        <h5 class="card-title"> BE Marine Technology with Marine Engineering</h5>
+                        <p class="card-text" style="text-align: justify;">The program focuses on the engineering systems that 
+                            keep a ship running, from the main propulsion engines to the auxiliary machinery.Relevant modules include: 
+                            Marine Engineering, Naval Architecture, Ship Hydrodynamics, Mathematics and Statistical Analysis, 
+                            Marine Engineering Design, Dynamic Modelling and Simulation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+            <h2 class="mb-5">Experience</h2>
+            <div class="row">
+                <div class="col first">
+                    <div class="card border-dark mb-3" style="max-width: 18rem;">
+                        <div class="card-header"></div>
+                        <span class="date"><span class="icon-calendar"></span> October 2019 - Present</span>
+                        <div class="card-body text-dark">
+                        <h5 class="card-title">PhD in Autonomous Underwater Vehicles</h5>
+                        <p class="card-text" style="text-align: justify;">During the first year of PhD, I expanded my programming 
+                            knowledge using Python. Also, I dived into Machine Learning and Computer Vision fields which I found 
+                            exciting to study and really fun by doing simple projects such as creating a Dog vs Cat classifier 
+                            and predicting the survivals on the Titanic disaster on Kaggle. Furthermore, the year's reward was 
+                            the 3rd place that I was awarded with in PG annual Conference at Newcastle University.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col m-first">
+                    <div class="card border-dark mb-3" style="max-width: 18rem;">
+                        <div class="card-header"></div>
+                        <span class="date"><span class="icon-calendar"></span> July 2013 - September 2018</span>
+                        <div class="card-body text-dark">
+                        <h5 class="card-title">Seagoing Second Engineer</h5>
+                        <p class="card-text" style="text-align: justify;">In-charge of all operations in the engine room engineers, 
+                            ensuring for their personnel safety and routine duties, also planing the overall maintenance of all the 
+                            machinery being in the engine room of the ship. My responsibilities include routine planning, as well as 
+                            unplanned machinery maintenance, the safety of all the personnel in charge, safety and good working 
+                            condition of all machinery in the engine room and the rest of the ship. Also, ensuring the proper operation 
+                            of machinery to prevent oil pollution.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col m-first">
+                    <div class="card border-dark mb-3" style="max-width: 18rem;">
+                        <div class="card-header"></div>
+                        <span class="date"><span class="icon-calendar"></span> July 2009 - May 2013</span>
+                        <div class="card-body text-dark">
+                        <h5 class="card-title">Seagoing 3rd Engineer</h5>
+                        <p class="card-text" style="text-align: justify;">My duties as a 3rd Engineer was to perform maintenance and repairs, 
+                            following the instructions of the Second Engineer. I was applying safe work practices during watchkeeping and 
+                            repair/maintenance work, per superiors’ requirements and the Company’s procedures. Participating in bunkering operations, 
+                            lubricants and water filling, according to the Chief and/or Second Engineer’s orders. Responsible for main and auxiliary 
+                            boilers feed water chemical analysis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+         </div> <!-- Services-Wrapper End -->
+
+      </div> <!--end row -->
+
+      </div>
+      
+
+   </section> <!-- About Section End-->
+
+   
+    
+
+
+    <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+      <div class="row section-head">
+         <div class="col full">
+            <h2>Contact </h2>
+            <p class="desc">Get in touch with me.</p>
+         </div>
+      </div>
+
+      <div class="row">
+
+         <div class="col g-7">
+
+            <!-- form -->
+            <form name="contactForm" id="contactForm" method="post" action="">
+					<fieldset>
+
+                  <div>
+						   <label for="contactName">Name <span class="required">*</span></label>
+						   <input name="contactName" type="text" id="contactName" size="35" value="" />
+                  </div>
+
+                  <div>
+						   <label for="contactEmail">Email <span class="required">*</span></label>
+						   <input name="contactEmail" type="text" id="contactEmail" size="35" value="" />
+                  </div>
+
+                  <div>
+						   <label for="contactSubject">Subject</label>
+						   <input name="contactSubject" type="text" id="contactSubject" size="35" value="" />
+                  </div>
+
+                  <div>
+                     <label  for="contactMessage">Message <span class="required">*</span></label>
+                     <textarea name="contactMessage"  id="contactMessage" rows="15" cols="50" ></textarea>
+                  </div>
+
+                  <div>
+                     <button class="submit">Submit</button>
+                     <span id="image-loader">
+                        <img src="{% static 'website/images/loader.gif' %}" alt="" />
+                     </span>
+                  </div>
+
+					</fieldset>
+				</form> <!-- Form End -->
+
+            <!-- contact-warning -->
+            <div id="message-warning"></div>
+            <!-- contact-success -->
+				<div id="message-success">
+               <i class="icon-ok"></i>Your message was sent, thank you!<br />
+				</div>
+
+         </div>
+
+
+         <aside class="col g-5">
+
+            <h3>Contact Information</h3>
+
+            <p></p>
+
+            <p>
+            33 Bothal Street <br />
+            Newcastle upon Tyne <br />
+            Byker, NE6 2JQ
+            </p>
+
+            <p>
+            Mobile: +44 7767 876368 <br />
+            Email: giannis.polymenis@gmail.com
+            </p><br />
+
+            <h3>Template Info</h3>
+
+            <p>Kreative is a free website template by <a href="http://www.styleshout.com/" target="_blank">styleshout.com</a>. This work is
+		      released and licensed under the <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license">
+		      Creative Commons Attribution 3.0 License</a>, which means that you are free to
+		      use and modify it for any personal or commercial purpose. All I ask is that you give me credit by including a credit link to
+		      <a href="http://www.styleshout.com/" target="_blank">my website</a>.
+            </p>
+
+         </aside>
+
+      </div>
+
+   </section> <!-- Contact Section End-->
+
+{% endblock %}

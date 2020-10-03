@@ -1,0 +1,93 @@
+{% extends 'base_post.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<article class="post">
+
+    <div class="row">
+
+       <div class="col entry-header cf">
+
+          <h1>
+              Personal Portfolio website.<br/>
+              <p class="desc">Using Python and Django.</p>
+
+          </h1>
+            
+
+          <div class="post-meta">
+
+             <time class="date" datetime="2013-08-14T11:24">Aug 14, 2020</time>
+
+             <p class="categories">
+                <span class="sep">/</span><a href="#">Design</a>
+                <span class="sep">/</span><a href="#">User Inferface</a>
+                <span class="sep">/</span><a href="#">Web Design</a>
+             </p>
+
+          </div>
+
+       </div>
+       
+
+       <div class="col post-image">
+          <img src="{% static 'website/images/project/code_1.jpg' %}" alt="post-image" title="post-image">
+       </div>
+
+       <div class="col post-content offset-2">
+
+          <p class="lead">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+           nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
+           cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
+           ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. </p>
+
+          <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+          nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
+          cursus a sit amet mauris. Morbi accumsan ipsum velit. Duis sed odio sit amet nibh vulputate
+          cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+          deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.
+          At vero eos et accusamus et iusto odio <a href="#">dignissimos ducimus</a> qui blanditiis praesentium.</p>
+
+          <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+          nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
+          cursus a sit amet mauris. Morbi accumsan ipsum velit. Duis sed odio sit amet nibh vulputate
+          cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+
+          <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+          nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
+          cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+
+          <p class="tags">
+                <span>Tagged in </span>:
+                 <a href="#">orci</a>, <a href="#">lectus</a>, <a href="#">varius</a>, <a href="#">turpis</a>
+             </p>
+
+          <div class="bio cf">
+             <div class="gravatar">
+                <img src="{% static 'website/images/author-img.png' %}" alt="">
+             </div>
+             <div class="about">
+                <h5><a title="Posts by John Doe" href="#" rel="author">Ioannis Polymenis</a></h5>
+                <p>Ioannis Polymenis is lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
+                   cursus a sit amet mauris. Morbi accumsan ipsum velit. Duis sed odio sit amet nibh vulputate
+                   <a href="#">cursus</a> a sit <a href="#">amet mauris</a>. Morbi elit consequat ipsum.</p>
+             </div>
+          </div>
+
+          <ul class="post-nav cf">
+                <li class="prev"><a rel="prev" href="#"><strong>Previous Article</strong> Duis Sed Odio Sit Amet Nibh Vulputate</a></li>
+                 <li class="next"><a rel="next" href="#"><strong>Next Article</strong> Morbi Elit Consequat Ipsum</a></li>
+             </ul>
+
+       </div>
+
+    </div>
+
+
+ </article> <!-- Post End -->
+
+{% endblock %}

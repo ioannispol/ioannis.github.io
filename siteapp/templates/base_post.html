@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+
+   <!--- Basic Page Needs
+   ================================================== -->
+	<meta charset="utf-8">
+	<title>Ioannis Polymenis</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="{% static 'website/css/base.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/layout.css' %}">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+   <!-- Favicons
+	================================================== -->
+   <link rel="shortcut icon" href="{% static 'website/images/pngwave.ico' %}" >
+</head>
+
+<body class="narrow">
+<!-- Header
+   ================================================== -->
+   <header id="top" class="static">
+
+      <div class="row">
+
+         <div class="col full">
+
+            <div class="logo">
+               <a href="{% url 'index' %}"><img alt="" src="{% static 'website/images/deep_view.png' %}"></a>
+            </div>
+
+            <nav id="nav-wrap">
+
+               <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	            <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+               <ul id="nav" class="nav">
+                   <li><a href="{% url 'index' %}">Site</a></li>
+                   <li><a href="#portfolio {% url 'project' %}">Portfolio</a></li>
+	               <li class="active"><a href="{% url 'blog' %}">Journal</a></li>
+               </ul>
+
+            </nav>
+
+         </div>
+
+      </div>
+
+   </header> <!-- Header End -->
+
+{% block content %}
+
+
+{% endblock %}
+
+ <!-- footer
+   ================================================== -->
+   <footer>
+
+    <div class="row">
+
+       <div class="col g-7">
+          <ul class="copyright">
+             <li>&copy; 2020 Polymenis Ioannis</li>
+             <li>Design by <a href="http://www.ioannisresume.xyz/" title="Polymenis Ioannis">Polymenis Ioannis</a></li>               
+          </ul>
+       </div>
+
+       <div class="col g-5 pull-right">
+          <ul class="social-links">
+             <li><a href="#"><i class="icon-facebook"></i></a></li>
+             <li><a href="#"><i class="icon-twitter"></i></a></li>
+             <li><a href="#"><i class="icon-google-plus-sign"></i></a></li>
+             <li><a href="https://www.linkedin.com/in/giannis-polimenis/"><i class="icon-linkedin"></i></a></li>
+             <li><a href="#"><i class="icon-skype"></i></a></li>
+             <li><a href="#"><i class="icon-rss-sign"></i></a></li>
+          </ul>
+       </div>
+
+    </div>
+
+ </footer> <!-- Footer End-->
+
+ <!-- Java Script
+ ================================================== -->
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ <script>window.jQuery || document.write('<script src="/static/websitejs/jquery-1.10.2.min.js"><\/script>')</script>
+ <script type="text/javascript" src="{% static 'website/js/jquery-migrate-1.2.1.min.js' %}"></script>
+
+ <script src="{% static 'website/js/smoothscrolling.js' %}"></script>
+
+</body>
+
+</html>
